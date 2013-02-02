@@ -1,0 +1,34 @@
+<h1>Calcula tu peso ideal</h1>
+<p>Entra tu sexo, tipo de fórmula en pulgadas o centimetros</p>
+<%= form_tag("/resultado", :method => "get") do%>
+<hr>
+<p>Entra tu sexo</p>
+<%= radio_button_tag(:sexo,"0")%>
+<%= label_tag(:sexo_m,"Masculino")%>
+<%= radio_button_tag(:sexo,"1")%>
+<%= label_tag(:sexo_f,"Femenino")%>
+<hr>
+<p>Entra tu altura</p>
+<%= number_field_tag(:altura) %>
+<hr>
+<p>Entra las unidades que prefieras para tu altura</p>
+<%= radio_button_tag(:tipo_dato, "in")%>
+<%= label_tag(:tipo_dato_in, "Pulgadas")%>
+<%= radio_button_tag(:tipo_dato, "cm")%>
+<%= label_tag(:tipo_dato_cm, "Centimetros")%>
+<hr>
+<p>Escoge tu formula favorita</p>
+<%= radio_button_tag(:formula, "Devine") %>
+<%= label_tag(:formula_dev, "Devine") %>
+<%= radio_button_tag(:formula, "Robinson") %>
+<%= label_tag(:formula_rob, "Robinson") %>
+<%= radio_button_tag(:formula, "Miller") %>
+<%= label_tag(:formula_mil, "Miller") %>
+<hr>
+
+    <br>
+    <%= submit_tag "calcular" %>
+
+
+<% end%>
+
