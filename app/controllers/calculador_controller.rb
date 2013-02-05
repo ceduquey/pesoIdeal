@@ -32,9 +32,9 @@ class CalculadorController < ApplicationController
         else
           @resultado=107.8+3.74*(altura-60)
         end
-      else
+      elsif
         if sexo==0 then
-          @reslultado=123.64+3.10*(altura-60)
+          @resultado=123.64+3.10*(altura-60)
         else
           @resultado=116.82+2.99*(altura-60)
         end
