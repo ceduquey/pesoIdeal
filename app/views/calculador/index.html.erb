@@ -4,7 +4,7 @@
 <hr>
 <p>Entra tu sexo</p>
 <%= radio_button_tag(:sexo,"0")%>
-<%= label_tag(:sexo_m,"Masculino")%>
+<%= label_tag(:sexo_m,"Masculino",:id => "Masculino")%>
 <%= radio_button_tag(:sexo,"1")%>
 <%= label_tag(:sexo_f,"Femenino")%>
 <hr>
@@ -27,7 +27,7 @@
 <hr>
 
     <br>
-    <%= submit_tag "calcular" %>
+    <%= submit_tag "calcular", :id => "calcular" %>
 
 
 <% end%>
